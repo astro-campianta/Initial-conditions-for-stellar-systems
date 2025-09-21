@@ -32,11 +32,11 @@ The code workflow can be selected by choosing either mode 1 (random pairing) or 
 
 * Salpeter IMF:
   ```math
-  f(m) = C \, m^{-\alpha}, \quad m_\text{min} \le m \le m_\text{max}, \quad \alpha = 2.35
-  
-  C = \frac{1-\alpha}{m_\text{max}^{1-\alpha} - m_\text{min}^{1-\alpha}}
-  
+  $$
+  f(m) = C \, m^{-\alpha}, \quad m_\text{min} \le m \le m_\text{max}, \quad \alpha = 2.35 \\
+  C = \frac{1-\alpha}{m_\text{max}^{1-\alpha} - m_\text{min}^{1-\alpha}} \\
   m(u) = \left[ m_\text{min}^{1-\alpha} + u \left( m_\text{max}^{1-\alpha} - m_\text{min}^{1-\alpha} \right) \right]^{\frac{1}{1-\alpha}}, \quad u \in [0,1]
+  $$
 * Kroupa IMF:
    ```math
   f(m) \propto
