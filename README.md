@@ -32,8 +32,8 @@ The code workflow can be selected by choosing either mode 1 (random pairing) or 
 
 * Salpeter IMF:
   ```math
-  f(m) = C \, m^{-\alpha}, \quad m_\text{min} \le m \le m_\text{max}, \quad \alpha = 2.35 \\
-  C = \frac{1-\alpha}{m_\text{max}^{1-\alpha} - m_\text{min}^{1-\alpha}} \\
+  f(m) = C \, m^{-\alpha}, \quad m_\text{min} \le m \le m_\text{max}, \quad \alpha = 2.35; 
+  C = \frac{1-\alpha}{m_\text{max}^{1-\alpha} - m_\text{min}^{1-\alpha}}; 
   m(u) = \left[ m_\text{min}^{1-\alpha} + u \left( m_\text{max}^{1-\alpha} - m_\text{min}^{1-\alpha} \right) \right]^{\frac{1}{1-\alpha}}, \quad u \in [0,1]
 * Kroupa IMF:
    ```math
@@ -42,16 +42,14 @@ The code workflow can be selected by choosing either mode 1 (random pairing) or 
   m^{-\alpha_0}, & m_\text{min} \le m < m_1 \\
   m^{-\alpha_1}, & m_1 \le m < m_2 \\
   m^{-\alpha_2}, & m_2 \le m \le m_\text{max}
-  \end{cases}
-  \alpha_0 = 0.3, \quad \alpha_1 = 1.3, \quad \alpha_2 = 2.3, \quad
-  m_1 = 0.08\,M_\odot, \quad m_2 = 0.5\,M_\odot \\
-  C_1 = m_1^{\alpha_1 - \alpha_0}, \quad C_2 = C_1 \, m_2^{\alpha_2 - \alpha_1} \\
+  \end{cases}; 
+  C_1 = m_1^{\alpha_1 - \alpha_0}, \quad C_2 = C_1 \, m_2^{\alpha_2 - \alpha_1}; 
   \begin{aligned}
   A_1 &= \frac{m_1^{1-\alpha_0} - m_\text{min}^{1-\alpha_0}}{1-\alpha_0} \\
   A_2 &= C_1 \frac{m_2^{1-\alpha_1} - m_1^{1-\alpha_1}}{1-\alpha_1} \\
   A_3 &= C_2 \frac{m_\text{max}^{1-\alpha_2} - m_2^{1-\alpha_2}}{1-\alpha_2} \\
   A &= A_1 + A_2 + A_3
-  \end{aligned}
+  \end{aligned}; 
   m(u) =
   \begin{cases}
   \left[ (1-\alpha_0) A u + m_\text{min}^{1-\alpha_0} \right]^{\frac{1}{1-\alpha_0}}, & 0 \le A u < A_1 \\
