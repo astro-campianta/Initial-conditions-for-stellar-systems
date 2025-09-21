@@ -49,7 +49,7 @@ The code workflow can be selected by choosing either mode 1 (random pairing) or 
   A_2 &= C_1 \frac{m_2^{1-\alpha_1} - m_1^{1-\alpha_1}}{1-\alpha_1} \\
   A_3 &= C_2 \frac{m_\text{max}^{1-\alpha_2} - m_2^{1-\alpha_2}}{1-\alpha_2} \\
   A &= A_1 + A_2 + A_3
-  \end{aligned}; 
+  \end{aligned}; \quad
   m(u) =
   \begin{cases}
   \left[ (1-\alpha_0) A u + m_\text{min}^{1-\alpha_0} \right]^{\frac{1}{1-\alpha_0}}, & 0 \le A u < A_1 \\
