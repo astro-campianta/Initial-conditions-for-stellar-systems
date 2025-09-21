@@ -11,7 +11,7 @@ Code structure
 
 The code is divided into the following classes, each one including the possibility of plotting the sampled distribution functions:
 
-* StellarIMF: generates masses (M$_\odot$) according to the Kroupa or the Salpeter IMF, in the selected mass interval;
+* StellarIMF: generates masses ($M_\odot$) according to the Kroupa or the Salpeter IMF, in the selected mass interval;
 * BinaryCoupling: pairs binary components by randomly associating their masses or using a mass-ratio extracted from either a uniform or a power-law q-distribution. It additionally assigns masses to single stars from the leftover mass sample and calculetes the total mass of the system;
 * PhaseModel: generates positions and velocities of single stars and binary centers of mass according to either the Plummer or the King model;
 * SemiMajorAxis: extracts semimajor axes in AU for binary orbits from a uniform, a log-flat or a power-law distribution;
