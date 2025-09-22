@@ -36,7 +36,7 @@ The code workflow can be selected by choosing either mode 1 (random pairing) or 
   C = \frac{1-\alpha}{m_\text{max}^{1-\alpha} - m_\text{min}^{1-\alpha}}; \quad
   m(u) = \left[ m_\text{min}^{1-\alpha} + u \left( m_\text{max}^{1-\alpha} - m_\text{min}^{1-\alpha} \right) \right]^{\frac{1}{1-\alpha}}, \quad u \in [0,1]
 * Kroupa IMF:
-   ```math
+  ```math
   f(m) \propto
   \begin{cases} 
   m^{-\alpha_0}, & m_\text{min} \le m < m_1 \\
@@ -59,6 +59,17 @@ The code workflow can be selected by choosing either mode 1 (random pairing) or 
   \left[ (1-\alpha_1)\frac{A u - A_1}{C_1} + m_1^{1-\alpha_1} \right]^{\frac{1}{1-\alpha_1}}, & A_1 \le A u < A_1 + A_2 \\
   \left[ (1-\alpha_2)\frac{A u - A_1 - A_2}{C_2} + m_2^{1-\alpha_2} \right]^{\frac{1}{1-\alpha_2}}, & A_1 + A_2 \le A u \le A
   \end{cases}
+* Uniform mass-ratio distribution:
+  ```math
+  f(q) = \frac{1}{q_\text{max} - q_\text{min}}; \quad 
+  q(u) = q_\text{min} + u \,(q_\text{max} - q_\text{min}), \quad u \in [0,1]
+* Power-law mass-ratio distribution:
+  ```math
+  f(q) = \frac{q^{\beta}}{\int_{q_\text{min}}^{q_\text{max}} q^{\beta}\, dq}; \quad
+  \int_{q_\text{min}}^{q_\text{max}} q^{\beta}\, dq = \frac{q_\text{max}^{\beta+1} - q_\text{min}^{\beta+1}}{\beta+1}; \quad
+  f(q) = \frac{(\beta+1)\,q^{\beta}} {q_\text{max}^{\beta+1} - q_\text{min}^{\beta+1}}; \quad
+  q(u) = \left[\,u \,\big(q_\text{max}^{\beta+1} - q_\text{min}^{\beta+1}\big) + q_\text{min}^{\beta+1}\right]^{\tfrac{1}{\beta+1}}, \quad u \in [0,1]
+
 
 
 
