@@ -141,7 +141,7 @@ Start Jupyter Notebook:
 ```bash
 jupyter notebook
 ```
-From the Jupyter interface, open **initial_conditions_generator.ipynb**. Run the cells sequentially to generate stellar populations with your chosen initial conditions (mode 1 or mode 2). 
+From the Jupyter interface, open **initial_conditions_generator.ipynb**. Run the cells sequentially to generate stellar systems with your chosen initial conditions (mode 1 or mode 2). 
 
 
 
