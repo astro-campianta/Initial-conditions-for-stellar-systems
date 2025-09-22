@@ -71,10 +71,35 @@ The code workflow can be selected by choosing either mode 1 (random pairing) or 
   ```math
   \rho(r) = \frac{3M}{4 \pi a^3} \left(1 + \frac{r^2}{a^2}\right)^{-\tfrac{5}{2}}; \quad
   r(u) = \frac{a}{\sqrt{u^{-\tfrac{2}{3}} - 1}}, \quad u \in [0,1]; \quad
-  f(x) \propto x^2 \,(1 - x^2)^{\tfrac{7}{2}} \implies x = \frac{v}{v_e(r)}, \quad 0 \leq x \leq 1; \quad
-  v_e(r) = \sqrt{\frac{2GM}{\sqrt{r^2 + a^2}}}
-
-
+  f(x) \propto x^2 \,(1 - x^2)^{\tfrac{7}{2}} \implies x = \frac{v}{v_e(r)} = v \sqrt{\frac{\sqrt{r^2 + a^2}}{2GM}}, \quad 0 \leq x \leq 1
+* King model:
+  ```math
+  \rho(\psi) \propto e^{\psi}\,\mathrm{erf}(\sqrt{\psi}) - \sqrt{\tfrac{4\psi}{\pi}} \left( 1 + \tfrac{2}{3}\psi \right); \quad
+  f(E) \propto 
+  \begin{cases}
+  e^E - 1, & E > 0 \\
+  0, & E \leq 0
+  \end{cases};
+  E = \psi(r) - \tfrac{1}{2} v^2
+* Uniform semi-major axis distribution:
+  ```math
+  f(a) = \frac{1}{a_\text{max} - a_\text{min}}; \quad a(u) = a_\text{min} + u \,(a_\text{max} - a_\text{min}), \quad u \in [0,1]
+* Log-flat semi-major axis distribution (Öpik's law):
+  ```math
+  f(a) = \frac{1}{a \,\ln\!\left(\tfrac{a_\text{max}}{a_\text{min}}\right)}; \quad a(u) = a_\text{min} \left(\frac{a_\text{max}}{a_\text{min}}\right)^u, \quad u \in [0,1]
+* Power-law semi-major axis distribution:
+  ```math
+  f(a) = 
+  \begin{cases}
+  \dfrac{(1-\beta)\,a^{-\beta}}{a_\text{max}^{1-\beta} - a_\text{min}^{1-\beta}}, & \beta \neq 1 \\[1em]
+  \dfrac{1}{a \,\ln\!\left(\tfrac{a_\text{max}}{a_\text{min}}\right)}, & \beta = 1
+  \end{cases};
+  a(u) = 
+  \begin{cases}
+  \Big[\,u\,(a_\text{max}^{1-\beta} - a_\text{min}^{1-\beta}) + a_\text{min}^{1-\beta}\,\Big]^{\tfrac{1}{1-\beta}}, & \beta \neq 1 \\[1em]
+  a_\text{min}\,\Big(\tfrac{a_\text{max}}{a_\text{min}}\Big)^u, & \beta = 1
+  \end{cases},
+  \quad u \in [0,1]
 
 
 
