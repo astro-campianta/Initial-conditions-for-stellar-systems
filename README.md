@@ -65,10 +65,15 @@ The code workflow can be selected by choosing either mode 1 (random pairing) or 
   q(u) = q_\text{min} + u \,(q_\text{max} - q_\text{min}), \quad u \in [0,1]
 * Power-law mass-ratio distribution:
   ```math
-  f(q) = \frac{q^{\beta}}{\int_{q_\text{min}}^{q_\text{max}} q^{\beta}\, dq}; \quad
-  \int_{q_\text{min}}^{q_\text{max}} q^{\beta}\, dq = \frac{q_\text{max}^{\beta+1} - q_\text{min}^{\beta+1}}{\beta+1}; \quad
   f(q) = \frac{(\beta+1)\,q^{\beta}} {q_\text{max}^{\beta+1} - q_\text{min}^{\beta+1}}; \quad
   q(u) = \left[\,u \,\big(q_\text{max}^{\beta+1} - q_\text{min}^{\beta+1}\big) + q_\text{min}^{\beta+1}\right]^{\tfrac{1}{\beta+1}}, \quad u \in [0,1]
+* Plummer model:
+  ```math
+  \rho(r) = \frac{3M}{4 \pi a^3} \left(1 + \frac{r^2}{a^2}\right)^{-\tfrac{5}{2}}; \quad
+  r(u) = \frac{a}{\sqrt{u^{-\tfrac{2}{3}} - 1}}, \quad u \in [0,1]; \quad
+  f(x) \propto x^2 \,(1 - x^2)^{\tfrac{7}{2}} \implies x = \frac{v}{v_e(r)}, \quad 0 \leq x \leq 1; \quad
+  v_e(r) = \sqrt{\frac{2GM}{\sqrt{r^2 + a^2}}}
+
 
 
 
