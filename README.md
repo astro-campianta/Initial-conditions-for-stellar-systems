@@ -113,6 +113,38 @@ The code workflow can be selected by choosing either mode 1 (random pairing) or 
   ```math
   f(e) = \frac{1}{B(\alpha,\beta)}\left(\frac{e - e_\text{min}}{e_\text{max} - e_\text{min}}\right)^{\alpha - 1}\left(1 - \frac{e - e_\text{min}}{e_\text{max} - e_\text{min}}\right)^{\beta - 1}\frac{1}{e_\text{max} -    e_\text{min}}; \quad e(u) = e_\text{min} + (e_\text{max} - e_\text{min}) \cdot x, \quad x \sim \mathrm{B}(\alpha,\beta), \quad u \in [0,1]
 
+**Installation and usage**
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/stellar-systems-simulator.git
+cd stellar-systems-simulator
+```
+Create and activate a virtual environment:
+
+* Linux / macOS:
+  ```bash
+  python3 -m venv venv
+  source venv/bin/activate
+  ```
+* Windows:
+  ```powershell
+  python -m venv venv
+  venv\Scripts\Activate
+  ```
+Install the dependencies:
+```bash
+pip install -r requirements.txt
+```
+Start Jupyter Notebook:
+```bash
+jupyter notebook
+```
+From the Jupyter interface, open **initial_conditions_generator.ipynb**. Run the cells sequentially to generate stellar populations with your chosen initial conditions (mode 1 or mode 2). 
+
+
+
 
 
 
