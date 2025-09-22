@@ -111,7 +111,7 @@ The code workflow can be selected by choosing either mode 1 (random pairing) or 
   f(e) = \frac{2e}{e_\text{max}^2 - e_\text{min}^2}; \quad e(u) = \sqrt{u \,(e_\text{max}^2 - e_\text{min}^2) + e_\text{min}^2}, \quad u \in [0,1]
 * Beta eccentricity distribution:
   ```math
-  f(e) = \frac{1}{B(\alpha,\beta)}\left(\frac{e - e_\text{min}}{e_\text{max} - e_\text{min}}\right)^{\alpha - 1}\left(1 - \frac{e - e_\text{min}}{e_\text{max} - e_\text{min}}\right)^{\beta - 1}\frac{1}{e_\text{max} -    e_\text{min}}; \quad e(u) = e_\text{min} + (e_\text{max} - e_\text{min}) \cdot x, \quad x \sim \mathrm{Beta}(\alpha,\beta), \quad u \in [0,1]
+  f(e) = \frac{1}{B(\alpha,\beta)}\left(\frac{e - e_\text{min}}{e_\text{max} - e_\text{min}}\right)^{\alpha - 1}\left(1 - \frac{e - e_\text{min}}{e_\text{max} - e_\text{min}}\right)^{\beta - 1}\frac{1}{e_\text{max} -    e_\text{min}}; \quad e(u) = e_\text{min} + (e_\text{max} - e_\text{min}) \cdot x, \quad x \sim \mathrm{B}(\alpha,\beta), \quad u \in [0,1]
 
 
 
