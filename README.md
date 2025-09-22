@@ -79,7 +79,7 @@ The code workflow can be selected by choosing either mode 1 (random pairing) or 
   \begin{cases}
   e^E - 1, & E > 0 \\
   0, & E \leq 0
-  \end{cases};
+  \end{cases}; \quad
   E = \psi(r) - \tfrac{1}{2} v^2
 * Uniform semi-major axis distribution:
   ```math
@@ -93,13 +93,44 @@ The code workflow can be selected by choosing either mode 1 (random pairing) or 
   \begin{cases}
   \dfrac{(1-\beta)\,a^{-\beta}}{a_\text{max}^{1-\beta} - a_\text{min}^{1-\beta}}, & \beta \neq 1 \\[1em]
   \dfrac{1}{a \,\ln\!\left(\tfrac{a_\text{max}}{a_\text{min}}\right)}, & \beta = 1
-  \end{cases};
+  \end{cases}; \quad
   a(u) = 
   \begin{cases}
   \Big[\,u\,(a_\text{max}^{1-\beta} - a_\text{min}^{1-\beta}) + a_\text{min}^{1-\beta}\,\Big]^{\tfrac{1}{1-\beta}}, & \beta \neq 1 \\[1em]
   a_\text{min}\,\Big(\tfrac{a_\text{max}}{a_\text{min}}\Big)^u, & \beta = 1
   \end{cases},
   \quad u \in [0,1]
+* Uniform eccentricity distribution:
+  ```math
+  f(e) = \frac{1}{e_\text{max} - e_\text{min}}; \quad e(u) = e_\text{min} + u \,(e_\text{max} - e_\text{min}), \quad u \in [0,1]
+* Rayleigh eccentricity distribution:
+  ```math
+  f(e) = \frac{e}{\sigma^2} \exp\!\left(-\frac{e^2}{2\sigma^2}\right), \quad e \geq 0; \quad e(u) = \sigma \sqrt{-2 \ln(1-u)}, \quad u \in [0,1]
+* Thermal eccentricity distribution:
+  ```math
+  f(e) = \frac{2e}{e_\text{max}^2 - e_\text{min}^2}; \quad e(u) = \sqrt{u \,(e_\text{max}^2 - e_\text{min}^2) + e_\text{min}^2}, \quad u \in [0,1]
+* Beta eccentricity distribution:
+  ```math
+  f(e) = \frac{1}{B(\alpha,\beta)}\left(\frac{e - e_\text{min}}{e_\text{max} - e_\text{min}}\right)^{\alpha - 1}\left(1 - \frac{e - e_\text{min}}{e_\text{max} - e_\text{min}}\right)^{\beta - 1}\frac{1}{e_\text{max} -    e_\text{min}}; \quad e(u) = e_\text{min} + (e_\text{max} - e_\text{min}) \cdot x, \quad x \sim \mathrm{Beta}(\alpha,\beta), \quad u \in [0,1]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
 
 
 
