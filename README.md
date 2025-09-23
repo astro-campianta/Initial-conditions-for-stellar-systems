@@ -36,21 +36,21 @@ The code workflow can be selected by choosing either mode 1 (random pairing) or 
 * **N_tot**: total number of stars, including single stars and binary components;
 * **f_b**: binary fraction;
 * **m_s**: masses of single stars;
-* **m_1**: masses of primary components of binaries;
-* **m_2**: masses of secondary components of binaries;
+* **m_1**: masses of primary binary components;
+* **m_2**: masses of secondary binary components;
 * **m**: masses of all stars, including single stars and binary components;
 * **M**: total mass of the system;
 * **X**: vector positions of all stars, including single stars and binary systems;
 * **X_s**: vector positions of single stars;
-* **X_1**: vector positions of primary components of binaries;
-* **X_2**: vector positions of secondary components of binaries;
+* **X_1**: vector positions of primary binary components;
+* **X_2**: vector positions of secondary binary components;
 * **V**: vector velocities of all stars, including single stars and binary systems;
 * **V_s**: vector velocities of single stars;
-* **V_1**: vector velocities of primary components of binaries;
-* **V_2**: vector velocities of secondary components of binaries;
-* **q**: mass ratio;
-* **a**: semi-major axis;
-* **e**: eccentricity;
+* **V_1**: vector velocities of primary binary components;
+* **V_2**: vector velocities of secondary binary components;
+* **q**: mass ratios;
+* **a**: semi-major axes;
+* **e**: eccentricities;
 * **Q**: virial ratio.
 
 **Formulas**
