@@ -30,7 +30,7 @@ The code workflow can be selected by choosing either mode 1 (random pairing) or 
 
 **Parameters**
 
-* ```math N_s ```: number of single stars;
+* $$ N_s $$: number of single stars;
 * ```math N_b ```: number of binary systems;
 * ```math N = N_s + N_b ```: number of single stars and binary systems;
 * ```math N_tot = N_b +2*N_b ```: total number of stars, including single stars and binary components;
