@@ -32,14 +32,14 @@ The code workflow can be selected by choosing either mode 1 (random pairing) or 
 
 * **N_s**: number of single stars;
 * **N_b**: number of binary systems;
-* **N = N_s + N_b**: number of single stars and binary systems;
-* **N_tot = N_b +2*N_b**: total number of stars, including single stars and binary components;
+* **N**: number of single stars and binary systems;
+* **N_tot**: total number of stars, including single stars and binary components;
 * **f_b**: binary fraction;
 * **m_s**: masses of single stars;
 * **m_1**: masses of primary components of binaries;
 * **m_2**: masses of secondary components of binaries;
 * **m**: masses of all stars, including single stars and binary components;
-* **math M**: total mass of the system;
+* **M**: total mass of the system;
 * **X**: vector positions of all stars, including single stars and binary systems;
 * **X_s**: vector positions of single stars;
 * **X_1**: vector positions of primary components of binaries;
