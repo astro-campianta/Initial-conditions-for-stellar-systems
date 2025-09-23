@@ -30,28 +30,28 @@ The code workflow can be selected by choosing either mode 1 (random pairing) or 
 
 **Parameters**
 
-* $$ N_s $$: number of single stars;
-* ```math N_b ```: number of binary systems;
-* ```math N = N_s + N_b ```: number of single stars and binary systems;
-* ```math N_tot = N_b +2*N_b ```: total number of stars, including single stars and binary components;
-* ```math f_b ```: binary fraction;
-* ```math m_s```: masses of single stars;
-* ```math m_1```: masses of primary components of binaries;
-* ```math m_2```: masses of secondary components of binaries;
-* ```math m```: masses of all stars, including single stars and binary components;
-* ```math M```: total mass of the system;
-* ```math X```: vector positions of all stars, including single stars and binary systems;
-* ```math X_s```: vector positions of single stars;
-* ```math X_1```: vector positions of primary components of binaries;
-* ```math X_2```: vector positions of secondary components of binaries;
-* ```math V```: vector velocities of all stars, including single stars and binary systems;
-* ```math V_s```: vector velocities of single stars;
-* ```math V_1```: vector velocities of primary components of binaries;
-* ```math V_2```: vector velocities of secondary components of binaries;
-* ```math q = \frac{m_2}{m_1}```: mass ratio;
-* ```math a```: semi-major axis;
-* ```math e```: eccentricity;
-* ```math Q = \frac{T}{|U|}```: virial ratio.
+* **N_s**: number of single stars;
+* **N_b**: number of binary systems;
+* **N = N_s + N_b**: number of single stars and binary systems;
+* **N_tot = N_b +2*N_b**: total number of stars, including single stars and binary components;
+* **f_b**: binary fraction;
+* **m_s**: masses of single stars;
+* **m_1**: masses of primary components of binaries;
+* **m_2**: masses of secondary components of binaries;
+* **m**: masses of all stars, including single stars and binary components;
+* **math M**: total mass of the system;
+* **X**: vector positions of all stars, including single stars and binary systems;
+* **X_s**: vector positions of single stars;
+* **X_1**: vector positions of primary components of binaries;
+* **X_2**: vector positions of secondary components of binaries;
+* **V**: vector velocities of all stars, including single stars and binary systems;
+* **V_s**: vector velocities of single stars;
+* **V_1**: vector velocities of primary components of binaries;
+* **V_2**: vector velocities of secondary components of binaries;
+* **q**: mass ratio;
+* **a**: semi-major axis;
+* **e**: eccentricity;
+* **Q**: virial ratio.
 
 **Formulas**
 
