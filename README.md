@@ -28,6 +28,31 @@ It furthermore contains the following functions:
 Each main function generates a dataframe listing stellar masses, position and velocity components by column, so that each raw entirely defines a single object. The dataframe is stored into a file .dat in the specified directory.
 The code workflow can be selected by choosing either mode 1 (random pairing) or mode 2 (q-distribution) in the final cell.
 
+**Parameters**
+
+* ```math N_s ```: number of single stars;
+* ```math N_b ```: number of binary systems;
+* ```math N = N_s + N_b ```: number of single stars and binary systems;
+* ```math N_tot = N_b +2*N_b ```: total number of stars, including single stars and binary components;
+* ```math f_b ```: binary fraction;
+* ```math m_s```: masses of single stars;
+* ```math m_1```: masses of primary components of binaries;
+* ```math m_2```: masses of secondary components of binaries;
+* ```math m```: masses of all stars, including single stars and binary components;
+* ```math M```: total mass of the system;
+* ```math X```: vector positions of all stars, including single stars and binary systems;
+* ```math X_s```: vector positions of single stars;
+* ```math X_1```: vector positions of primary components of binaries;
+* ```math X_2```: vector positions of secondary components of binaries;
+* ```math V```: vector velocities of all stars, including single stars and binary systems;
+* ```math V_s```: vector velocities of single stars;
+* ```math V_1```: vector velocities of primary components of binaries;
+* ```math V_2```: vector velocities of secondary components of binaries;
+* ```math q = \frac{m_2}{m_1}```: mass ratio;
+* ```math a```: semi-major axis;
+* ```math e```: eccentricity;
+* ```math Q = \frac{T}{|U|}```: virial ratio.
+
 **Formulas**
 
 * Salpeter IMF:
