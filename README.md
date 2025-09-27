@@ -51,7 +51,11 @@ The code workflow can be selected by choosing either mode 1 (random pairing) or 
 * **q**: mass ratios;
 * **a**: semi-major axes;
 * **e**: eccentricities;
-* **Q**: virial ratio.
+* **Q**: virial ratio;
+* **W0**: dimensionless central potential (King model);
+* **r_max**: maximum radius for ODE integration (King model);
+* **D**: fractal dimension;
+* **c**: concentration (scale) parameter. 
 
 **Formulas**
 
