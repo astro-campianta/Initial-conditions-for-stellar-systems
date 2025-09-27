@@ -145,13 +145,11 @@ The code workflow can be selected by choosing either mode 1 (random pairing) or 
 **Installation and usage**
 
 Clone the repository:
-
 ```bash
 git clone https://github.com/your-username/stellar-systems-simulator.git
 cd stellar-systems-simulator
 ```
 Create and activate a virtual environment:
-
 * Linux / macOS:
   ```bash
   python3 -m venv venv
@@ -164,7 +162,7 @@ Create and activate a virtual environment:
   ```
 Install the dependencies:
 ```bash
-pip install -r requirements.txt
+pip install numpy pandas matplotlib scipy
 ```
 Start Jupyter Notebook:
 ```bash
