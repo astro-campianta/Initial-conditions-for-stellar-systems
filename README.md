@@ -170,7 +170,7 @@ jupyter notebook
 ```
 From the Jupyter interface, open **initial_conditions_generator.ipynb**. Run the cells sequentially to generate stellar systems with your chosen initial conditions (mode 1 or mode 2).
 
-**Aknowledgements**
+**Aknowledgments**
 
 This Python code was developed in collaboration with Dr. Long Wang and is based on methods described in Wang et al. (2020, https://arxiv.org/abs/2006.16560). 
 
