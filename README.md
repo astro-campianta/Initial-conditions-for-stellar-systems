@@ -1,13 +1,13 @@
 # Initial-conditions-for-stellar-systems
 
-**Abstract**
+## Abstract
 
 This code generates initial conditions for stellar systems by extracting fundamental physical parameters from the corresponding distribution functions. Two different binary-creation workflows are supported:
 * **random pairing**: draws all component masses independently from the IMF and then groups them into singles and binary pairs;
 * **q-distribution pairing**: draws only single primary masses from the IMF and generates secondaries by sampling a mass-ratio from the selected q-distribution.
 The generator is intended for research use (population synthesis initial conditions, N-body simulations, statistical testing), and is written to be configurable, easily reproducible and compatible with N-body simulators (e.g., Nbody 6++, Nbody 7 and PeTar).
 
-**Code structure**
+## Code structure
 
 The code is divided into the following classes, each one including the possibility of plotting the sampled distribution functions:
 
@@ -28,7 +28,7 @@ It furthermore contains the following functions:
 Each main function generates a dataframe listing stellar masses, position and velocity components by column, so that each raw entirely defines a single object. The dataframe is stored into a file .dat in the specified directory.
 The code workflow can be selected by choosing either mode 1 (random pairing) or mode 2 (q-distribution) in the final cell.
 
-**Parameters**
+## Parameters
 
 * **N_s**: number of single stars;
 * **N_b**: number of binary systems;
@@ -57,7 +57,7 @@ The code workflow can be selected by choosing either mode 1 (random pairing) or 
 * **D**: fractal dimension;
 * **c**: concentration (scale) parameter. 
 
-**Formulas**
+## Formulas
 
 * Salpeter IMF:
   ```math
@@ -142,7 +142,7 @@ The code workflow can be selected by choosing either mode 1 (random pairing) or 
   ```math
   f(e) = \frac{1}{B(\alpha,\beta)}\left(\frac{e - e_\text{min}}{e_\text{max} - e_\text{min}}\right)^{\alpha - 1}\left(1 - \frac{e - e_\text{min}}{e_\text{max} - e_\text{min}}\right)^{\beta - 1}\frac{1}{e_\text{max} -    e_\text{min}}; \quad e(u) = e_\text{min} + (e_\text{max} - e_\text{min}) \cdot x, \quad x \sim \mathrm{B}(\alpha,\beta), \quad u \in [0,1]
 
-**Installation and usage**
+## Installation and usage
 
 Clone the repository:
 ```bash
@@ -170,7 +170,7 @@ jupyter notebook
 ```
 From the Jupyter interface, open **initial_conditions_generator.ipynb**. Run the cells sequentially to generate stellar systems with your chosen initial conditions (mode 1 or mode 2).
 
-**Aknowledgments**
+## Aknowledgments
 
 This Python code was developed in collaboration with Dr. Long Wang and is based on methods described in Wang et al. (2020, https://arxiv.org/abs/2006.16560). 
 
